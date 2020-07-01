@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		294D9F3D2443703300C370DF /* CREDDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D9F3C2443703300C370DF /* CREDDemoAppTests.swift */; };
+		2956F353243AF717000C26DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F352243AF717000C26DF /* AppDelegate.swift */; };
+		2956F355243AF717000C26DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F354243AF717000C26DF /* SceneDelegate.swift */; };
+		2956F357243AF717000C26DF /* CREDCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F356243AF717000C26DF /* CREDCardVC.swift */; };
+		2956F35A243AF717000C26DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956F358243AF717000C26DF /* Main.storyboard */; };
+		2956F35C243AF718000C26DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2956F35B243AF718000C26DF /* Assets.xcassets */; };
+		2956F35F243AF718000C26DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956F35D243AF718000C26DF /* LaunchScreen.storyboard */; };
+		2956F367243AF9F4000C26DF /* CREDCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2956F366243AF9F4000C26DF /* CREDCardView.xib */; };
+		2956F36B243B0EE9000C26DF /* CREDCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F36A243B0EE9000C26DF /* CREDCardCell.swift */; };
+		2956F36F243B8E2F000C26DF /* CREDCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F36E243B8E2F000C26DF /* CREDCardPresenter.swift */; };
+		2956F371243B8E4C000C26DF /* CREDCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F370243B8E4C000C26DF /* CREDCardInteractor.swift */; };
+		2956F373243B8E8A000C26DF /* CREDCardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F372243B8E8A000C26DF /* CREDCardConfigurator.swift */; };
+		2956F375243B8FB5000C26DF /* CREDCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F374243B8FB5000C26DF /* CREDCardRouter.swift */; };
+		2956F377243B9EAD000C26DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F376243B9EAD000C26DF /* ViewController.swift */; };
+		2956F379243BA0B7000C26DF /* CREDCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F368243B090C000C26DF /* CREDCardView.swift */; };
+		2956F37B243BA56E000C26DF /* CREDCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956F37A243BA56E000C26DF /* CREDCardModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		294D9F3F2443703300C370DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2956F347243AF717000C26DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2956F34E243AF717000C26DF;
+			remoteInfo = CREDDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		294D9F3A2443703300C370DF /* CREDDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CREDDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		294D9F3C2443703300C370DF /* CREDDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDDemoAppTests.swift; sourceTree = "<group>"; };
+		294D9F3E2443703300C370DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		294D9F44244447D800C370DF /* CREDDemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CREDDemoApp.entitlements; sourceTree = "<group>"; };
+		2956F34F243AF717000C26DF /* CREDDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CREDDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2956F352243AF717000C26DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2956F354243AF717000C26DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2956F356243AF717000C26DF /* CREDCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardVC.swift; sourceTree = "<group>"; };
+		2956F359243AF717000C26DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2956F35B243AF718000C26DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2956F35E243AF718000C26DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2956F360243AF718000C26DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2956F366243AF9F4000C26DF /* CREDCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CREDCardView.xib; sourceTree = "<group>"; };
+		2956F368243B090C000C26DF /* CREDCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardView.swift; sourceTree = "<group>"; };
+		2956F36A243B0EE9000C26DF /* CREDCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardCell.swift; sourceTree = "<group>"; };
+		2956F36E243B8E2F000C26DF /* CREDCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardPresenter.swift; sourceTree = "<group>"; };
+		2956F370243B8E4C000C26DF /* CREDCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardInteractor.swift; sourceTree = "<group>"; };
+		2956F372243B8E8A000C26DF /* CREDCardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardConfigurator.swift; sourceTree = "<group>"; };
+		2956F374243B8FB5000C26DF /* CREDCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardRouter.swift; sourceTree = "<group>"; };
+		2956F376243B9EAD000C26DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2956F37A243BA56E000C26DF /* CREDCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CREDCardModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		294D9F372443703300C370DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2956F34C243AF717000C26DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		294D9F3B2443703300C370DF /* CREDDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				294D9F3C2443703300C370DF /* CREDDemoAppTests.swift */,
+				294D9F3E2443703300C370DF /* Info.plist */,
+			);
+			path = CREDDemoAppTests;
+			sourceTree = "<group>";
+		};
+		2956F346243AF717000C26DF = {
+			isa = PBXGroup;
+			children = (
+				2956F351243AF717000C26DF /* CREDDemoApp */,
+				294D9F3B2443703300C370DF /* CREDDemoAppTests */,
+				2956F350243AF717000C26DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2956F350243AF717000C26DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2956F34F243AF717000C26DF /* CREDDemoApp.app */,
+				294D9F3A2443703300C370DF /* CREDDemoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2956F351243AF717000C26DF /* CREDDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				294D9F44244447D800C370DF /* CREDDemoApp.entitlements */,
+				2956F352243AF717000C26DF /* AppDelegate.swift */,
+				2956F354243AF717000C26DF /* SceneDelegate.swift */,
+				2956F376243B9EAD000C26DF /* ViewController.swift */,
+				2956F356243AF717000C26DF /* CREDCardVC.swift */,
+				2956F36E243B8E2F000C26DF /* CREDCardPresenter.swift */,
+				2956F370243B8E4C000C26DF /* CREDCardInteractor.swift */,
+				2956F372243B8E8A000C26DF /* CREDCardConfigurator.swift */,
+				2956F374243B8FB5000C26DF /* CREDCardRouter.swift */,
+				2956F36A243B0EE9000C26DF /* CREDCardCell.swift */,
+				2956F368243B090C000C26DF /* CREDCardView.swift */,
+				2956F37A243BA56E000C26DF /* CREDCardModel.swift */,
+				2956F358243AF717000C26DF /* Main.storyboard */,
+				2956F366243AF9F4000C26DF /* CREDCardView.xib */,
+				2956F35B243AF718000C26DF /* Assets.xcassets */,
+				2956F35D243AF718000C26DF /* LaunchScreen.storyboard */,
+				2956F360243AF718000C26DF /* Info.plist */,
+			);
+			path = CREDDemoApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		294D9F392443703300C370DF /* CREDDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294D9F432443703300C370DF /* Build configuration list for PBXNativeTarget "CREDDemoAppTests" */;
+			buildPhases = (
+				294D9F362443703300C370DF /* Sources */,
+				294D9F372443703300C370DF /* Frameworks */,
+				294D9F382443703300C370DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				294D9F402443703300C370DF /* PBXTargetDependency */,
+			);
+			name = CREDDemoAppTests;
+			productName = CREDDemoAppTests;
+			productReference = 294D9F3A2443703300C370DF /* CREDDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2956F34E243AF717000C26DF /* CREDDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2956F363243AF718000C26DF /* Build configuration list for PBXNativeTarget "CREDDemoApp" */;
+			buildPhases = (
+				2956F34B243AF717000C26DF /* Sources */,
+				2956F34C243AF717000C26DF /* Frameworks */,
+				2956F34D243AF717000C26DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CREDDemoApp;
+			productName = CREDDemoApp;
+			productReference = 2956F34F243AF717000C26DF /* CREDDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2956F347243AF717000C26DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = balaji;
+				TargetAttributes = {
+					294D9F392443703300C370DF = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2956F34E243AF717000C26DF;
+					};
+					2956F34E243AF717000C26DF = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2956F34A243AF717000C26DF /* Build configuration list for PBXProject "CREDDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2956F346243AF717000C26DF;
+			productRefGroup = 2956F350243AF717000C26DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2956F34E243AF717000C26DF /* CREDDemoApp */,
+				294D9F392443703300C370DF /* CREDDemoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		294D9F382443703300C370DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2956F34D243AF717000C26DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2956F35F243AF718000C26DF /* LaunchScreen.storyboard in Resources */,
+				2956F35C243AF718000C26DF /* Assets.xcassets in Resources */,
+				2956F35A243AF717000C26DF /* Main.storyboard in Resources */,
+				2956F367243AF9F4000C26DF /* CREDCardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		294D9F362443703300C370DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				294D9F3D2443703300C370DF /* CREDDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2956F34B243AF717000C26DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2956F379243BA0B7000C26DF /* CREDCardView.swift in Sources */,
+				2956F377243B9EAD000C26DF /* ViewController.swift in Sources */,
+				2956F373243B8E8A000C26DF /* CREDCardConfigurator.swift in Sources */,
+				2956F375243B8FB5000C26DF /* CREDCardRouter.swift in Sources */,
+				2956F357243AF717000C26DF /* CREDCardVC.swift in Sources */,
+				2956F36B243B0EE9000C26DF /* CREDCardCell.swift in Sources */,
+				2956F36F243B8E2F000C26DF /* CREDCardPresenter.swift in Sources */,
+				2956F371243B8E4C000C26DF /* CREDCardInteractor.swift in Sources */,
+				2956F353243AF717000C26DF /* AppDelegate.swift in Sources */,
+				2956F355243AF717000C26DF /* SceneDelegate.swift in Sources */,
+				2956F37B243BA56E000C26DF /* CREDCardModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		294D9F402443703300C370DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2956F34E243AF717000C26DF /* CREDDemoApp */;
+			targetProxy = 294D9F3F2443703300C370DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2956F358243AF717000C26DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2956F359243AF717000C26DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2956F35D243AF718000C26DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2956F35E243AF718000C26DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		294D9F412443703300C370DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CREDDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.CREDDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CREDDemoApp.app/CREDDemoApp";
+			};
+			name = Debug;
+		};
+		294D9F422443703300C370DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CREDDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.CREDDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CREDDemoApp.app/CREDDemoApp";
+			};
+			name = Release;
+		};
+		2956F361243AF718000C26DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2956F362243AF718000C26DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2956F364243AF718000C26DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CREDDemoApp/CREDDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CREDDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.CREDDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2956F365243AF718000C26DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CREDDemoApp/CREDDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CREDDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.CREDDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		294D9F432443703300C370DF /* Build configuration list for PBXNativeTarget "CREDDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				294D9F412443703300C370DF /* Debug */,
+				294D9F422443703300C370DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2956F34A243AF717000C26DF /* Build configuration list for PBXProject "CREDDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2956F361243AF718000C26DF /* Debug */,
+				2956F362243AF718000C26DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2956F363243AF718000C26DF /* Build configuration list for PBXNativeTarget "CREDDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2956F364243AF718000C26DF /* Debug */,
+				2956F365243AF718000C26DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2956F347243AF717000C26DF /* Project object */;
+}

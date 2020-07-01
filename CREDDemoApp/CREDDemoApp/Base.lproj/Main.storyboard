@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8w1-F4-AVS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eae-77-OFw">
+            <objects>
+                <navigationController id="8w1-F4-AVS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eXC-oe-U1g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k2W-XT-xWe" kind="relationship" relationship="rootViewController" id="RTh-PE-1IW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHR-nQ-RKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="-122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GfW-Mh-ctv">
+            <objects>
+                <viewController id="k2W-XT-xWe" customClass="ViewController" customModule="CREDDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PbN-TW-yz3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80f-0r-1m1">
+                                <rect key="frame" x="133.5" y="433" width="147" height="30"/>
+                                <state key="normal" title="Show CRED Card List"/>
+                                <connections>
+                                    <action selector="clickAction" destination="k2W-XT-xWe" eventType="touchUpInside" id="oZI-Ap-3eU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="80f-0r-1m1" firstAttribute="centerY" secondItem="PbN-TW-yz3" secondAttribute="centerY" id="P98-H4-sBO"/>
+                            <constraint firstItem="80f-0r-1m1" firstAttribute="centerX" secondItem="PbN-TW-yz3" secondAttribute="centerX" id="luB-Mb-Adp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uVj-sG-kXp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K3I-iM-pWj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMK-YU-c7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="-120"/>
+        </scene>
+        <!--CARDS-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CREDCardVC" title="CARDS" id="BYZ-38-t0r" customClass="CREDCardVC" customModule="CREDDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wBB-7j-yXP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="L4n-2O-GUS">
+                                    <rect key="frame" x="0.0" y="273.5" width="414" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" id="mJY-kV-ykG" customClass="CREDCardCell" customModule="CREDDemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJY-kV-ykG" id="6vP-ln-EwK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLq-q7-i56">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="g50-ar-DA8"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ZLq-q7-i56" secondAttribute="bottom" id="FCD-E8-Lym"/>
+                                                <constraint firstItem="ZLq-q7-i56" firstAttribute="leading" secondItem="6vP-ln-EwK" secondAttribute="leading" constant="20" id="RaI-14-MRM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZLq-q7-i56" secondAttribute="trailing" constant="20" id="qE2-iy-zh6"/>
+                                                <constraint firstItem="ZLq-q7-i56" firstAttribute="top" secondItem="6vP-ln-EwK" secondAttribute="top" id="zcM-jv-qWb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="holderView" destination="ZLq-q7-i56" id="E3V-vm-Ewm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="i6p-KG-I1Q"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ccS-yW-06Z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wBB-7j-yXP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9XA-Wb-3EJ"/>
+                            <constraint firstItem="wBB-7j-yXP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TkR-9g-6Fp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wBB-7j-yXP" secondAttribute="trailing" id="Tv9-6o-lgF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wBB-7j-yXP" secondAttribute="bottom" id="fEF-Dn-350"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="wBB-7j-yXP" id="9gq-AP-ytt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="131"/>
+        </scene>
+    </scenes>
+</document>
